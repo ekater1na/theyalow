@@ -98,7 +98,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PTSans";
   src: url("/assets/fonts/ptsans/PTSans-Bold.eot");
   src: url("/assets/fonts/ptsans/PTSans-Bold.eot?#iefix") format("embedded-opentype"),
   url("/assets/fonts/ptsans/PTSans-Bold.woff2") format("woff2"),
@@ -109,7 +109,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PTSans-Regular";
   src: url("/assets/fonts/ptsans/PTSans-Regular.eot");
   src: url("/assets/fonts/ptsans/PTSans-Regular.eot?#iefix") format("embedded-opentype"),
   url("/assets/fonts/ptsans/PTSans-Regular.woff2") format("woff2"),
@@ -120,7 +120,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans Narrow";
+  font-family: "PTSans Narrow";
   src: url("/assets/fonts/ptsans/PTSans-Narrow.eot");
   src: url("/assets/fonts/ptsans/PTSans-Narrow.eot?#iefix") format("embedded-opentype"),
   url("/assets/fonts/ptsans/PTSans-Narrow.woff2") format("woff2"),
@@ -131,7 +131,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PTSans";
   src: url("/assets/fonts/ptsans/PTSans-Italic.eot");
   src: url("/assets/fonts/ptsans/PTSans-Italic.eot?#iefix") format("embedded-opentype"),
   url("/assets/fonts/ptsans/PTSans-Italic.woff2") format("woff2"),
@@ -142,7 +142,7 @@
 }
 
 @font-face {
-  font-family: "Segoe UI";
+  font-family: "SegoeUI";
   src: url("/assets/fonts/SegoeUI-BoldItalic.eot");
   src: url("/assets/fonts/SegoeUI-BoldItalic.eot?#iefix") format("embedded-opentype"),
   url("/assets/fonts/SegoeUI-BoldItalic.woff2") format("woff2"),
@@ -153,7 +153,7 @@
 }
 
 @font-face {
-  font-family: "Segoe UI";
+  font-family: "SegoeUI";
   src: url("/assets/fonts/SegoeUI-Bold.eot");
   src: url("/assets/fonts/SegoeUI-Bold.eot?#iefix") format("embedded-opentype"),
   url("/assets/fonts/SegoeUI-Bold.woff2") format("woff2"),
@@ -186,7 +186,7 @@
 }
 
 @font-face {
-  font-family: "Segoe UI";
+  font-family: "SegoeUI-Light";
   src: url("/assets/fonts/SegoeUI-Light.eot");
   src: url("/assets/fonts/SegoeUI-Light.eot?#iefix") format("embedded-opentype"),
   url("/assets/fonts/SegoeUI-Light.woff2") format("woff2"),
@@ -322,12 +322,17 @@ a, a:visited, a:hover {
 }
 
 .site-navigation {
+  position: relative;
   text-transform: uppercase;
   font-family: SegoeWP, AdobeInvisFont, MyriadPro-Regular;
   font-size: 17.04912pt;
   color: #9B7D08;
   text-align: center;
   box-shadow: #9B7D08 3px;
+}
+
+.site-navigation-item {
+
 }
 
 .about-us:before {
@@ -470,17 +475,39 @@ video {
   top: -230px;
 }
 
+/* line */
+
+.line {
+  margin-top: -10px;
+}
+
 /* feature-block */
 
+.feature-wrapper {
+  background-image: url(/assets/images/Layer\ 7@1X.png);
+  width: 100%;
+  height: 212px;
+}
+
 .feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 1019px;
   height: 212px;
   margin: 0 auto;
+  font-family: SegoeUI-Light,AdobeInvisFont,MyriadPro-Regular;
+  font-size: 27pt;
+  color: #000000;
+  text-align: center;
 }  
 
+.feature-item {
+  vertical-align: stretch;
+
+}
+
 .feature p{
-  display: inline-block;
-  vertical-align: top;
   text-align: center;
   width: 30%;
   margin: 0;
@@ -539,14 +566,16 @@ h3 {
 h2 {
   font-family: PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
   font-size: 43.04912pt;
-  color: rgba(245, 197, 6, 255);
+  color: #f5c506;
   text-align: left;
   text-transform: uppercase;
 }
 
+
 .device {
   height: 499px;
 }
+
 
 /* footer */
 
