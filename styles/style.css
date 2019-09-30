@@ -54,7 +54,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans Caption";
+  font-family: "PTSans Caption";
   src: url("/assets/fonts/ptsans/PTSans-CaptionBold.eot");
   src: url("/assets/fonts/ptsans/PTSans-CaptionBold.eot?#iefix") format("embedded-opentype"),
   url("/assets/fonts/ptsans/PTSans-CaptionBold.woff2") format("woff2"),
@@ -65,7 +65,7 @@
 }
 
 @font-face {
-  font-family: "PTSans Narrow";
+  font-family: "PTSans-NarrowBold";
   src: url("/assets/fonts/ptsans/PTSans-NarrowBold.eot");
   src: url("/assets/fonts/ptsans/PTSans-NarrowBold.eot?#iefix") format("embedded-opentype"),
   url("/assets/fonts/ptsans/PTSans-NarrowBold.woff2") format("woff2"),
@@ -197,7 +197,7 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "OpenSans";
   src: local("Open Sans"), local("OpenSans"),
   url("/assets/fonts/open-sans/opensans.woff2") format("woff2"),
   url("/assets/fonts/open-sans/opensans.woff") format("woff"),
@@ -232,9 +232,8 @@ header {
 
 .logo-wrapper {
   display: flex;
-  margin-left: 106px;
-  margin-top: 20px;
-  
+  margin-left: 150px;
+  margin-top: 30px;
 }
 
 .img-logo-wrapper {
@@ -254,7 +253,7 @@ header {
 
 h1 {
   font-family: LucidaSans-Italic, AdobeInvisFont, MyriadPro-Regular;
-  font-size: 41.04912pt;
+  font-size: 31pt;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -267,7 +266,7 @@ h1 {
   letter-spacing: -1px;
   text-align: center;
   font-family: Asap-Regular, AdobeInvisFont, MyriadPro-Regular;
-  font-size: 63pt;
+  font-size: 53pt;
 }
 
 .yellow {
@@ -398,7 +397,7 @@ a, a:visited, a:hover {
 .main-video {
   width: 549px;
   height: 327px;
-  margin-left: 110px;
+  margin-left: 150px;
 }
 
 .video-play-button {
@@ -415,7 +414,6 @@ a, a:visited, a:hover {
   left: 25px;
   top: 14px;
   opacity: 0.6;
-
 }
 
 .play-button {
@@ -473,7 +471,6 @@ a, a:visited, a:hover {
   position: absolute;
   left: 420px;
   opacity: 0.7;
-
 }
 
 .slider-navigation-wrapper-right-item {
@@ -499,7 +496,7 @@ a, a:visited, a:hover {
 .feature {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   margin: 0 auto;
   font-family: SegoeUI-Light,AdobeInvisFont,MyriadPro-Regular;
@@ -632,7 +629,7 @@ h3 {
 .date {
   font-family: SegoeWP-Light, AdobeInvisFont, MyriadPro-Regular;
   font-size: 25px;
-  flood-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .social-block-line {
@@ -661,13 +658,13 @@ h3 {
 .calendar-day {
   font-family: SegoeUI-Bold, AdobeInvisFont, MyriadPro-Regular;
   font-size: 51px;
-  flood-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .calendar-month {
   font-family: SegoeUI, AdobeInvisFont, MyriadPro-Regular;
   font-size: 21px;
-  flood-color: #B26529;
+  color: #B26529;
 }
 
 /* device */
@@ -685,11 +682,26 @@ h2 {
   padding-top: 63px;
 }
 
-
 .device {
   height: 499px;
 }
 
+.device-list-item {
+  font-family: OpenSans, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 22pt;
+  color: #A9A9A7;
+}
+
+.device-list-item::before {
+  content: url("/assets/images/Ellipse_4.png")
+}
+
+.it-s-free {
+  font-family: PTSans-NarrowBold, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 14pt;
+  color: #ffffff;
+  text-transform: uppercase;
+}
 
 /* footer */
 
