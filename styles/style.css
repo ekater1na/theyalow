@@ -142,7 +142,7 @@
 }
 
 @font-face {
-  font-family: "SegoeUI";
+  font-family: "SegoeUI-Bold";
   src: url("/assets/fonts/SegoeUI-BoldItalic.eot");
   src: url("/assets/fonts/SegoeUI-BoldItalic.eot?#iefix") format("embedded-opentype"),
   url("/assets/fonts/SegoeUI-BoldItalic.woff2") format("woff2"),
@@ -215,7 +215,7 @@ body {
 
 .background-wrapper {
   background-image: url("/assets/images/Layer\ 20@1X.png");
-  height: 566px;
+  height: 566px;  
 }
 
 header {
@@ -298,6 +298,7 @@ nav li {
   color: #9B7D08;
   font-size: 17px;
   margin-left: 5px; 
+  line-height: 40px;
 }
 
 li {
@@ -310,33 +311,40 @@ li {
 
 a, a:visited, a:hover {
   text-decoration: none;
+  color: #4b483a;
 }
 
 .site-navigation-wrapper{
-  background-image: url("/assets/images/Rectangle\ 2\ copy\ 3@1X.png");
+  display: flex;
+  float: left;
+  justify-content: space-around;
+  box-sizing: border-box;
+  background-color: #f5c506;;
   width: 453px;
   height: 41px;
   margin-top: 53px;
   margin-left: 130px;
-  
+  box-shadow: -4px -5px 0 #f5c50645,
+    -8px -8px 0 #f5c50645;
 }
 
 .site-navigation {
   position: relative;
+  width: 100%;
   text-transform: uppercase;
   font-family: SegoeWP, AdobeInvisFont, MyriadPro-Regular;
   font-size: 17.04912pt;
   color: #9B7D08;
   text-align: center;
-  box-shadow: #9B7D08 3px;
-}
-
-.site-navigation-item {
-
 }
 
 .about-us:before {
   content: url("/assets/images/Shape\ 5@1X.png");
+}
+
+.services {
+  border-left: 1px solid #b99403;
+  border-right: 1px solid #b99403;
 }
 
 .services:before {
@@ -354,7 +362,6 @@ a, a:visited, a:hover {
 }
 .slider-navigation-wrapper {
   position: relative;
-  
 }
 
 .slider-navigation {
@@ -494,7 +501,6 @@ a, a:visited, a:hover {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  height: 212px;
   margin: 0 auto;
   font-family: SegoeUI-Light,AdobeInvisFont,MyriadPro-Regular;
   font-size: 27pt;
@@ -504,13 +510,12 @@ a, a:visited, a:hover {
 
 .feature-item {
   vertical-align: stretch;
-
 }
 
 .feature p{
   text-align: center;
   width: 30%;
-  margin: 0;
+  line-height: 100%;
   background-repeat: no-repeat;
   background-position: center top;
   text-transform: uppercase;
@@ -518,23 +523,29 @@ a, a:visited, a:hover {
   
 .better-design {
   background-image: url("/assets/images/Shape\ 2@1X.png");
-  padding-top: 100px;
+  padding: 100px 0 0 0;
+}
+
+.better-design, .its-free {
+  border-left: 1px solid #b99403;
+  border-right: 1px solid #b99403;
 }
 
 .castomize {
   background-image: url("/assets/images/Shape\ 3@1X.png");
-  padding-top: 100px;
+  padding: 100px 0 0 0;
 }
 
 .its-free {
   background-image: url("/assets/images/Shape\ 4@1X.png");
-  padding-top: 100px;
+  padding: 100px 0 0 0;
 }
 
 /* twitter-block */
+
 .social-block {
   background-image: url("/assets/images/yellow-container.svg");
-  height: 502px;
+  height: 509px;
 }
 
 .block-wrapper {
@@ -553,35 +564,49 @@ h3 {
 }
 
 .social-text-container {
-  width: 26.23vw;
+  background-image: url(/assets/images/Layer\ 22@1X.png);
+  width: 351px;
   height: 233px;
 }
 
 .social-text {
+  
   font-family: SegoeWP-Light, AdobeInvisFont, MyriadPro-Regular;
-  font-size: 29.04912pt;
+  letter-spacing: 0.7;
+  font-size: 29pt;
   color: #ffffff;
   text-align: left;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .social-text-video {
-  width: 24.23vw;
+  width: 315px;
   height: 233px;
 }
 
 .social-text-video-window {
-  position: relative;
   height: 100%;
 }
 
-/* .social-text-video-window-button {
+.small-button-wrapper {
+  position: relative;
+}
+
+.social-text-video-window-button {
   position: absolute;
-  top: 20px;
-  left: 10px;
-} */
+  left: 128px;
+  bottom: 90px;
+  opacity: 0.6;
+}
 
 .social-text-video-window-item {
   position: absolute;
+  left: 152px;
+  bottom: 102px;
+  opacity: 0.6;
 }
 
 .twitter-item {
@@ -594,6 +619,55 @@ h3 {
 
 .social-flex-wrapper {
   display: flex;
+  position: relative;
+}
+
+.twitter-bird {
+  background-image: url("/assets/images/Layer\ 22\ copy\ 3@1X.png");
+  width: 329px;
+  height: 233px;
+  margin-left: 50px;
+}
+
+.date {
+  font-family: SegoeWP-Light, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 25px;
+  flood-color: #FFFFFF;
+}
+
+.social-block-line {
+  position: absolute;
+}
+
+.social-block-full-line {
+  position: absolute;
+  bottom: -35px;
+  left: 50px;
+}
+
+.social-block-bold-line {
+  position: relative;
+  bottom: -37px;
+  left: 420px;
+}
+
+/* calendar */
+
+.calendar {
+  width: 113px;
+  height: 86px;
+}
+
+.calendar-day {
+  font-family: SegoeUI-Bold, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 51px;
+  flood-color: #FFFFFF;
+}
+
+.calendar-month {
+  font-family: SegoeUI, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 21px;
+  flood-color: #B26529;
 }
 
 /* device */
