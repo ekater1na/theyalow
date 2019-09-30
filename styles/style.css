@@ -43,7 +43,7 @@
 }
 
 @font-face {
-  font-family: "SegoeWP";
+  font-family: "SegoeWP-Light";
   src: url("/assets/fonts/SegoeWP-Light.eot");
   src: url("/assets/fonts/SegoeWP-Light.eot?#iefix") format("embedded-opentype"),
   url("/assets/fonts/SegoeWP-Light.woff2") format("woff2"),
@@ -65,7 +65,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans Narrow";
+  font-family: "PTSans Narrow";
   src: url("/assets/fonts/ptsans/PTSans-NarrowBold.eot");
   src: url("/assets/fonts/ptsans/PTSans-NarrowBold.eot?#iefix") format("embedded-opentype"),
   url("/assets/fonts/ptsans/PTSans-NarrowBold.woff2") format("woff2"),
@@ -76,7 +76,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans Caption";
+  font-family: "PTSans Caption";
   src: url("/assets/fonts/ptsans/PTSans-Caption.eot");
   src: url("/assets/fonts/ptsans/PTSans-Caption.eot?#iefix") format("embedded-opentype"),
   url("/assets/fonts/ptsans/PTSans-Caption.woff2") format("woff2"),
@@ -87,7 +87,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PTSans";
   src: url("/assets/fonts/ptsans/PTSans-BoldItalic.eot");
   src: url("/assets/fonts/ptsans/PTSans-BoldItalic.eot?#iefix") format("embedded-opentype"),
   url("/assets/fonts/ptsans/PTSans-BoldItalic.woff2") format("woff2"),
@@ -262,7 +262,7 @@ h1 {
 .section-title {
   text-transform: uppercase;
   position: absolute;
-  top: -260px;
+  top: 60px;
   left: 750px;
   letter-spacing: -1px;
   text-align: center;
@@ -388,7 +388,7 @@ a, a:visited, a:hover {
 
 /* video */
 
-video {
+.main-video {
   width: 549px;
   height: 327px;
   margin-left: 110px;
@@ -444,7 +444,7 @@ video {
 .scroll-bar-wrapper {
   position: absolute;
   left: 200px;
-  top: -47px;
+  bottom: 115px;
 }
 
 .scroll-bar {
@@ -472,7 +472,7 @@ video {
 .slider-navigation-wrapper-right-item {
   position: absolute;
   right: 33px;
-  top: -230px;
+  top: 100px;
 }
 
 /* line */
@@ -493,7 +493,7 @@ video {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 1019px;
+  width: 100%;
   height: 212px;
   margin: 0 auto;
   font-family: SegoeUI-Light,AdobeInvisFont,MyriadPro-Regular;
@@ -514,7 +514,6 @@ video {
   background-repeat: no-repeat;
   background-position: center top;
   text-transform: uppercase;
-  border: 1px solid #bbbbbb;
 }
   
 .better-design {
@@ -538,12 +537,24 @@ video {
   height: 502px;
 }
 
+.block-wrapper {
+  width: 1021px;
+  margin: 0 auto;
+}
+
 h3 {
   font-family: PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
   font-size: 37.04912pt;
   color: #ffffff;
   text-align: left;
   text-transform: uppercase;
+  padding: 63px 0;
+
+}
+
+.social-text-container {
+  width: 26.23vw;
+  height: 233px;
 }
 
 .social-text {
@@ -553,22 +564,51 @@ h3 {
   text-align: left;
 }
 
+.social-text-video {
+  width: 24.23vw;
+  height: 233px;
+}
+
+.social-text-video-window {
+  position: relative;
+  height: 100%;
+}
+
+/* .social-text-video-window-button {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+} */
+
+.social-text-video-window-item {
+  position: absolute;
+}
+
 .twitter-item {
+  display: none;
   font-family: ArialMT, AdobeInvisFont, MyriadPro-Regular;
-  font-size: 13.04912pt;
-  color: rgba(143, 142, 142, 255);
+  font-size: 13pt;
+  color: #8f8e8e;
   text-align: left;
 }
 
+.social-flex-wrapper {
+  display: flex;
+}
 
-/* block */
+/* device */
+
+.device-background {
+  background-image: url("/assets/images/Layer\ 32@1X.png")
+}
 
 h2 {
   font-family: PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
-  font-size: 43.04912pt;
+  font-size: 43pt;
   color: #f5c506;
   text-align: left;
   text-transform: uppercase;
+  padding-top: 63px;
 }
 
 
@@ -580,6 +620,7 @@ h2 {
 /* footer */
 
 footer {
+    background-image: url("/assets/images/Layer\ 31@1X.png");
     height: 64px;
   }
 
