@@ -418,8 +418,8 @@ a, a:visited, a:hover {
 
 .play-button {
   position: relative;
-  left: 350px;
-  top: -209px;
+  left: 400px;
+  bottom: 200px;
 }
 
 .video-button {
@@ -488,15 +488,13 @@ a, a:visited, a:hover {
 /* feature-block */
 
 .feature-wrapper {
-  background-image: url(/assets/images/Layer\ 7@1X.png);
+  background-image: url("/assets/images/Layer\ 7@1X.png");
   width: 100%;
-  height: 212px;
 }
 
 .feature {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   margin: 0 auto;
   font-family: SegoeUI-Light,AdobeInvisFont,MyriadPro-Regular;
@@ -509,10 +507,10 @@ a, a:visited, a:hover {
   vertical-align: stretch;
 }
 
-.feature p{
+.feature p {
   text-align: center;
   width: 30%;
-  line-height: 100%;
+  line-height: 212px;
   background-repeat: no-repeat;
   background-position: center top;
   text-transform: uppercase;
@@ -520,8 +518,7 @@ a, a:visited, a:hover {
   
 .better-design {
   background-image: url("/assets/images/Shape\ 2@1X.png");
-  padding: 100px 0 0 0;
-}
+  }
 
 .better-design, .its-free {
   border-left: 1px solid #b99403;
@@ -530,12 +527,10 @@ a, a:visited, a:hover {
 
 .castomize {
   background-image: url("/assets/images/Shape\ 3@1X.png");
-  padding: 100px 0 0 0;
 }
 
 .its-free {
   background-image: url("/assets/images/Shape\ 4@1X.png");
-  padding: 100px 0 0 0;
 }
 
 /* twitter-block */
@@ -580,6 +575,7 @@ h3 {
 }
 
 .social-text-video {
+  position: relative;
   width: 315px;
   height: 233px;
 }
@@ -588,23 +584,23 @@ h3 {
   height: 100%;
 }
 
-.small-button-wrapper {
-  position: relative;
-}
-
 .social-text-video-window-button {
   position: absolute;
-  left: 128px;
-  bottom: 90px;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
   opacity: 0.6;
 }
 
 .social-text-video-window-item {
   position: absolute;
-  left: 152px;
-  bottom: 102px;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
   opacity: 0.6;
-}
+  }
 
 .twitter-item {
   display: none;
@@ -624,6 +620,16 @@ h3 {
   width: 329px;
   height: 233px;
   margin-left: 50px;
+  align-items: center;
+  position: relative;
+}
+
+.bird {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .date {
@@ -742,7 +748,9 @@ footer {
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 15px;
+  line-height: 64px;
 }
+
 
 .footer-title-wrapper {
   display: flex;
