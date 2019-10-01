@@ -266,7 +266,7 @@ h1 {
   letter-spacing: -1px;
   text-align: center;
   font-family: Asap-Regular, AdobeInvisFont, MyriadPro-Regular;
-  font-size: 53pt;
+  font-size: 48pt;
 }
 
 .yellow {
@@ -458,7 +458,7 @@ a, a:visited, a:hover {
 
 .scroll-bar-bold-line {
   position: absolute;
-  height: 10px;
+  height: 12px;
   width: 150px;
   border-radius: 20px;
 }
@@ -494,11 +494,11 @@ a, a:visited, a:hover {
 
 .feature {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   margin: 0 auto;
   font-family: SegoeUI-Light,AdobeInvisFont,MyriadPro-Regular;
-  font-size: 27pt;
+  font-size: 20pt;
   color: #000000;
   text-align: center;
 }  
@@ -509,7 +509,7 @@ a, a:visited, a:hover {
 
 .feature p {
   text-align: center;
-  width: 30%;
+  width: 33%;
   line-height: 212px;
   background-repeat: no-repeat;
   background-position: center top;
@@ -547,31 +547,37 @@ a, a:visited, a:hover {
 
 h3 {
   font-family: PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
-  font-size: 37.04912pt;
+  font-size: 28pt;
   color: #ffffff;
   text-align: left;
   text-transform: uppercase;
-  padding: 63px 0;
+  padding: 45px 0;
 
 }
 
 .social-text-container {
+  position: relative;
   background-image: url(/assets/images/Layer\ 22@1X.png);
   width: 351px;
   height: 233px;
 }
 
+.social-text-wrapper {
+  position: absolute;
+  width: 272px;
+  height: 174px;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
 .social-text {
-  
   font-family: SegoeWP-Light, AdobeInvisFont, MyriadPro-Regular;
   letter-spacing: 0.7;
-  font-size: 29pt;
+  font-size: 23pt;
   color: #ffffff;
   text-align: left;
-
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
 }
 
 .social-text-video {
@@ -619,7 +625,7 @@ h3 {
   background-image: url("/assets/images/Layer\ 22\ copy\ 3@1X.png");
   width: 329px;
   height: 233px;
-  margin-left: 50px;
+  margin-left: 30px;
   align-items: center;
   position: relative;
 }
@@ -633,32 +639,36 @@ h3 {
 }
 
 .date {
+  position:absolute;
+  top: 15px;
+  right: 15px;
   font-family: SegoeWP-Light, AdobeInvisFont, MyriadPro-Regular;
   font-size: 25px;
   color: #FFFFFF;
 }
 
 .social-block-line {
-  position: absolute;
+  position: relative;
+  top: 110px;
 }
 
 .social-block-full-line {
   position: absolute;
-  bottom: -35px;
-  left: 50px;
+  margin: 0 auto;;
 }
 
 .social-block-bold-line {
-  position: relative;
-  bottom: -37px;
-  left: 420px;
+  position: absolute;
+  margin: 0 auto;
 }
 
 /* calendar */
 
 .calendar {
+  background-image: url("/assets/images/Layer\ 22\ copy@1X.png");
   width: 113px;
   height: 86px;
+  text-align: center;
 }
 
 .calendar-day {
@@ -686,11 +696,11 @@ h3 {
 
 h2 {
   font-family: PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
-  font-size: 43pt;
+  font-size: 35pt;
   color: #f5c506;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
-  padding-top: 63px;
+  padding: 63px 0 63px 0;
 }
 
 .device-item-and-list {
@@ -700,6 +710,7 @@ h2 {
 
 .device-item {
   flex-direction: row;
+  width: 60%;
 }
 
 .device {
@@ -736,18 +747,24 @@ h2 {
   text-transform: uppercase;
 }
 
+.plus-item {
+  position:absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
 /* footer */
 
 footer {
   height: 64px;
-  background-image: url(/assets/images/Layer\ 31@1X.png);
+  background-image: url("/assets/images/Layer\ 31@1X.png");
   }
   
 .footer-logo-text {
   font-family: LucidaSans-Italic, AdobeInvisFont, MyriadPro-Regular;
   color: #FFFFFF;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 30px;
   line-height: 64px;
 }
 
