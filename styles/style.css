@@ -670,7 +670,12 @@ h3 {
 /* device */
 
 .device-background {
-  background-image: url("/assets/images/Layer\ 32@1X.png")
+  background-image: url("/assets/images/Layer\ 32@1X.png");
+}
+
+.device-block-wrapper {
+  width: 100%;
+  height: 509px;
 }
 
 h2 {
@@ -682,21 +687,43 @@ h2 {
   padding-top: 63px;
 }
 
+.device-item-and-list {
+  display: flex;
+  align-items: flex-end;
+}
+
+.device-item {
+  flex-direction: row;
+}
+
 .device {
   height: 499px;
 }
 
 .device-list-item {
+  width: 100%;
   font-family: OpenSans, AdobeInvisFont, MyriadPro-Regular;
-  font-size: 22pt;
+  font-size: 16pt;
   color: #A9A9A7;
+  padding: 0 0 20px 0;
 }
 
 .device-list-item::before {
   content: url("/assets/images/Ellipse_4.png")
 }
 
+.free-round {
+  position: relative;
+}
+
+.free-yellow-round {
+  position: absolute;
+}
+
 .it-s-free {
+  position: absolute;
+  top: 48px;
+  left: 10px;
   font-family: PTSans-NarrowBold, AdobeInvisFont, MyriadPro-Regular;
   font-size: 14pt;
   color: #ffffff;
@@ -706,10 +733,42 @@ h2 {
 /* footer */
 
 footer {
-    background-image: url("/assets/images/Layer\ 31@1X.png");
-    height: 64px;
+  height: 64px;
+  background-image: url(/assets/images/Layer\ 31@1X.png);
   }
+  
+.footer-logo-text {
+  font-family: LucidaSans-Italic, AdobeInvisFont, MyriadPro-Regular;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 15px;
+}
 
-.one {
-  background-color: #f5c506;
+.footer-title-wrapper {
+  display: flex;
+}
+
+.footer-flex-item {
+  align-items: center;
+}
+
+.footer-logo-wrapper {
+  display: flex;
+}
+
+.footer-img-logo-wrapper {
+  position: relative;
+  width: 54px;
+  height: 54px;  
+}
+
+.footer-logo-main {
+  position: absolute;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.footer-logo {
+  position: absolute;
+  width: 100%;
 }
